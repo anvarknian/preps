@@ -1,7 +1,8 @@
 value1 = 5
 value2 = 7
 array = [1, 2, 3, 4, 5, 6]
-unsorted_array = [1, 2, 3, 4, 5, 6,4,3,2,6,7,8,0]
+unsorted_array = [1, 2, 3, 4, 5, 6, 4, 3, 2, 6, 7, 8, 0]
+
 
 def rec_binary_search(low, high, array, value):
     if low <= high:

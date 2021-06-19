@@ -1,7 +1,8 @@
 value1 = 5
 value2 = 7
 array = [1, 2, 3, 4, 5, 6]
-unsorted_array = [1, 2, 3, 4, 5, 6,4,3,2,6,7,8,0]
+unsorted_array = [1, 2, 3, 4, 5, 6, 4, 3, 2, 6, 7, 8, 0]
+
 
 def merge_sort(myList):
     if len(myList) > 1:
@@ -26,9 +27,11 @@ def merge_sort(myList):
             k += 1
 
         while j < len(right):
-            myList[k]=right[j]
+            myList[k] = right[j]
             j += 1
             k += 1
         return myList
+
+
 print(merge_sort(unsorted_array))
 print(merge_sort(array))

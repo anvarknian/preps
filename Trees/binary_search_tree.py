@@ -4,6 +4,8 @@ class Node(object):
         self.value = value
         self.left = None
         self.right = None
+
+
 class BinaryTree(object):
     def __init__(self, root):
         self.root = Node(root)
@@ -28,6 +30,8 @@ class BinaryTree(object):
             traversal = self.preorder_print(start.left, traversal)
             traversal = self.preorder_print(start.right, traversal)
         return traversal
+
+
 # Set up tree
 tree = BinaryTree(1)
 tree.root.left = Node(2)

@@ -4,15 +4,16 @@ class Node(object):
         self.left = None
         self.right = None
 
+
 class BST(object):
     def __init__(self, root):
         self.root = Node(root)
 
     def insert(self, new_val):
         if self.root.value > new_val:
-            self.root.left=Node(new_val)
+            self.root.left = Node(new_val)
         if self.root.value < new_val:
-            self.root.right=Node(new_val)
+            self.root.right = Node(new_val)
 
     def search(self, find_val):
         return self.search_helper(self.root, find_val)
@@ -26,6 +27,8 @@ class BST(object):
             else:
                 return self.search_helper(current.left, find_val)
         return False
+
+
 # Set up tree
 tree = BST(4)
 
