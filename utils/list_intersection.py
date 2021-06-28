@@ -1,0 +1,6 @@
+a = set([1,2,3,4,5])
+b = set([1,3,5,4,5,5,6])
+v = a.intersection(b)
+print(a)
+print(b)
+print(v)
